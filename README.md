@@ -7,7 +7,7 @@ This technique will improve your productivity but most importantly it will help 
 
 ### Install
 ```
-go install github.com/mehdieidi/lomodoro
+go install github.com/mehdieidi/lomodoro@latest
 ```
 
 ### Usage
