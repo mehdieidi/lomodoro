@@ -1,0 +1,4 @@
+github.com/godbus/dbus v4.1.0+incompatible h1:WqqLRTsQic3apZUK9qC5sGNfXthmPXzUZ7nQPrNITa4=
+github.com/godbus/dbus v4.1.0+incompatible/go.mod h1:/YcGZj5zSblfDWMMoOzV4fas9FZnQYTkDnsGvmh2Grw=
+github.com/mehdieidi/hey v0.0.0-20220613171103-d4087f97dc58 h1:sLCk8Q37LufzIsH1hw4s+8dlpKU1hZS8COm+1y6imo8=
+github.com/mehdieidi/hey v0.0.0-20220613171103-d4087f97dc58/go.mod h1:FxU1fhv7Xyl1K1xjmm4B9tGxO/ePjzEeRkjkD/9LX8c=
