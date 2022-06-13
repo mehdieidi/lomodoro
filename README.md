@@ -1,9 +1,11 @@
 # lomodoro
-Linux pomodoro. Tool to help you remember to take a break!
+Linux pomodoro. Notification tool to help you remember to take a break!
 
 You know pomodoro technique? It basically says do WORK for some duration then take BREAK for some short period. Repeat this process.
 
 This technique will improve your productivity but most importantly it will help you protect your health like your eyes and stuff :D
+
+By running this tool in the background, you will receive notifications to take a break.
 
 ### Install
 ```
