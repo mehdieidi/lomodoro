@@ -7,7 +7,7 @@ This technique will improve your productivity but most importantly it will help 
 
 ### Install
 ```
-go install github.com/mehdieidi/build@latest
+go install github.com/mehdieidi
 ```
 
 ### Usage
