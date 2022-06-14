@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mehdieidi/hey"
+	"github.com/gen2brain/beeep"
 )
 
 func main() {
@@ -35,10 +35,8 @@ func main() {
 }
 
 func notify(topic, text string) {
-	hey.Push(hey.Notification{
-		Title:    topic,
-		Body:     text,
-		AppName:  "lomodoro",
-		Duration: hey.DefaultDuration,
-	})
+	err := beeep.Notify(topic, text, "")
+	if err != nil {
+		panic(err)
+	}
 }
