@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"time"
 
 	"github.com/mehdieidi/hey"
@@ -12,11 +13,18 @@ func main() {
 	breakDuration := flag.Int("b", 2, "how much minutes do you rest?")
 	flag.Parse()
 
+	fmt.Printf("work: %dmins, break: %dmins", *workDuration, *breakDuration)
+
 	ticker := time.NewTicker(time.Duration(*workDuration) * time.Minute)
+
+	count := 1
 
 	for {
 		select {
 		case <-ticker.C:
+			fmt.Println("Break number ", count)
+			count++
+
 			topic := "break"
 			text := "enough man! go get some rest."
 			notify(topic, text)
@@ -31,6 +39,6 @@ func notify(topic, text string) {
 		Title:    topic,
 		Body:     text,
 		AppName:  "lomodoro",
-		Duration: 5 * time.Second,
+		Duration: hey.DefaultDuration,
 	})
 }
