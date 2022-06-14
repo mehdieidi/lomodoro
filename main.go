@@ -13,7 +13,7 @@ func main() {
 	breakDuration := flag.Int("b", 2, "how much minutes do you rest?")
 	flag.Parse()
 
-	fmt.Printf("work: %dmins, break: %dmins", *workDuration, *breakDuration)
+	fmt.Printf("work: %d mins, break: %d mins\n", *workDuration, *breakDuration)
 
 	ticker := time.NewTicker(time.Duration(*workDuration) * time.Minute)
 
