@@ -20,17 +20,20 @@ func main() {
 	count := 1
 
 	for {
-		select {
-		case <-ticker.C:
-			fmt.Println("Break number ", count)
-			count++
+		<-ticker.C
+		fmt.Println("Break number ", count)
+		count++
 
-			topic := "break"
-			text := "enough man! go get some rest."
-			notify(topic, text)
-		}
+		topic := "break"
+		text := "enough man! go get some rest."
+		notify(topic, text)
 
 		time.Sleep(time.Duration(*breakDuration) * time.Minute)
+		topic = "work"
+		text = "let's make money and get rich!"
+		notify(topic, text)
+
+		ticker = time.NewTicker(time.Duration(*workDuration) * time.Minute)
 	}
 }
 
